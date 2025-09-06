@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portfólio — Kauan Rodrigues Justo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Canvas pixel (binário) -->
+<canvas id="pixelCanvas" aria-hidden="true"></canvas>
+
+<!-- Header / Nav -->
+<header>
+  <div class="header-inner">
+    <ul class="menu" role="menubar" aria-label="Navegação principal">
+      <li><a class="menu-link active" href="#inicio">Início</a></li>
+      <li><a class="menu-link" href="#sobre">Sobre</a></li>
+      <li><a class="menu-link" href="#habilidades">Habilidades</a></li>
+      <li><a class="menu-link" href="#projetos">Projetos</a></li>
+      <li><a class="menu-link" href="#contato">Contato</a></li>
+    </ul>
+    <button id="toggle-theme" aria-pressed="false" title="Alternar tema">🌓</button>
+  </div>
+</header>
+
+<main>
+  <!-- Início -->
+  <section id="inicio" class="balao">
+    <div class="perfil">
+      <div class="foto-perfil">
+        <img src="perfil.png" alt="Foto de Perfil">
+      </div>
+      <div class="intro">
+        <h1>Kauan Rodrigues Justo</h1>
+        <p>Sou estudante do curso técnico em Informática, com foco em desenvolvimento web e projetos integrados com Arduino. Tenho interesse em tecnologias inovadoras, design de interfaces intuitivas e soluções práticas baseadas em programação. Busco constantemente aprimorar minhas habilidades por meio da criação e do desafio contínuo de novas ideias.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="balao">
+    <h2>Sobre mim</h2>
+    <p><strong>Kauan Rodrigues Justo</strong></p>
+    <p>Tenho 16 anos e sou aluno do ensino médio integrado ao curso técnico em Informática na Escola Estadual Sanico Teles. Estou no início da minha jornada na área da tecnologia, mas já tive experiências práticas que me fizeram gostar ainda mais desse universo.</p>
+    <p>Participei de uma maratona de programação com foco em Python, além de desafios com C++ em projetos de robótica e automação. Atualmente, venho me dedicando ao aprendizado de HTML, CSS e JavaScript, desenvolvendo projetos web para aprimorar meus conhecimentos.</p>
+    <p>Tenho interesse tanto na área de Engenharia de Computação, que une hardware e software, quanto na carreira de Desenvolvedor Web, focada na criação de sites e aplicações. Sigo explorando essas possibilidades com curiosidade e vontade de aprender cada vez mais.</p>
+  </section>
+
+ <!-- Habilidades -->
+<section id="habilidades" class="balao">
+  <h2>Habilidades</h2>
+  <div class="habilidades-lista">
+
+    <div class="tab-content">
+      <h3>HTML</h3>
+      <div class="sp">
+        <p>Atualmente estou aprendendo a estruturar páginas com HTML, usando elementos semânticos básicos e organizando o conteúdo de forma clara.</p>
+        <div class="circle" data-percent="65"><div class="percent">0%</div></div>
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <h3>CSS</h3>
+      <p>Tenho noções de CSS e estou praticando como aplicar estilos, ajustar cores e montar layouts simples e responsivos.</p>
+      <div class="circle" data-percent="60"><div class="percent">0%</div></div>
+    </div>
+
+    <div class="tab-content">
+      <h3>JavaScript</h3>
+      <p>Estou iniciando os estudos em JavaScript, explorando a lógica de programação e os primeiros passos para interações com o DOM.</p>
+      <div class="circle" data-percent="40"><div class="percent">0%</div></div>
+    </div>
+
+    <div class="tab-content">
+      <h3>C++</h3>
+      <p>Experiência prática com C++ por meio de projetos com Arduino e participação em competições de robótica. Aplicação de conceitos como variáveis, estruturas de controle e integração com sensores.</p>
+      <div class="circle" data-percent="50"><div class="percent">0%</div></div>
+    </div>
+
+    <div class="tab-content">
+      <h3>Python</h3>
+      <p>Aprendizado em Python com foco na lógica, automações simples e resolução de problemas. Já participei de uma maratona de programação, o que contribuiu para minha experiência com a linguagem e trabalho em equipe.</p>
+      <div class="circle" data-percent="55"><div class="percent">0%</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projetos -->
+<section id="projetos" class="balao">
+  <h2>Projetos</h2>
+  <div class="projetos-lista">
+
+    <div class="tab-content">
+      <img class="thumb" src="site_pessoal.png" alt="Site Pessoal">
+      <h3>Site Pessoal / Portfólio</h3>
+      <p>Site pessoal/portfólio para apresentar minhas habilidades e projetos. HTML, CSS e JS com tema claro/escuro e fundo pixel art animado.</p>
+      <p><strong>Tecnologias:</strong> HTML • CSS • JavaScript</p>
+    </div>
+
+    <div class="tab-content">
+      <img class="thumb" src="aprende+.png" alt="Site Pessoal">
+      <h3>Aprende+ - Dashboard de Estudos</h3>
+      <p>Dashboard de Acompanhamento de Estudos</p>
+
+      <p><strong>Funcionalidades:</strong></p>
+      <p>• Adicione cursos, anotações e status (em andamento, concluído…).</p>
+      <p>• Mostre o progresso em barras ou percentuais.</p>
+      <p>• Sugira trilhas baseadas nos interesses do usuário.</p>
+      <p>• Use localStorage ou banco real para persistência.</p>
+
+      <p><strong>Foco: </strong>frontend – UI/UX, lógica, controle de estado e autenticação leve.</p>
+
+      <a href="https://www.exemplo.com" target="_blank" class="meu-link">clique aqui para saber mais</a>
+
+
+    </div>
+
+    <div class="tab-content">
+      <img class="thumb" src="rmai.png" alt="Robô RMAI">
+      <h3>Robô RMAI — Monitor Agrícola Inteligente</h3>
+      <p>Robô criado para monitorar pequenas áreas de plantio, medindo temperatura, umidade do solo e luminosidade.</p>
+      <p><strong>Tecnologias:</strong> Arduino • Sensores de temperatura, umidade e luminosidade</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Contato -->
+  <section id="contato" class="balao">
+    <h2>Contato</h2>
+    <form id="contactForm" class="form" action="#" onsubmit="return false;">
+      <label for="nome">Nome</label>
+      <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 — Kauan Rodrigues Justo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
